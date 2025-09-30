@@ -34,7 +34,13 @@ You can create:
    - Currently works with **DMA** (not fully synchronized yet)  
 
 ---
+## ⚙️ How to Use
+1. Open project in STM32CubeIDE  
+2. Flash to Nucleo-STM32G071RB  
+3. Connect ILI9341 TFT SPI (240×320)  
+4. 5 pins for display and 4 for BTN in pullUP witchi GND
 
+---
 ## ⚠️ Current Limitations / Future Improvements
 
 -  DMA transfer is blocking → need non-blocking + dirty rectangles  
@@ -48,15 +54,6 @@ Contributions are welcome! Pull requests & ideas appreciated
 
 ## ☕ Support
 
-If you like this project and want to support development:  SilkQuizzer
+If you like this project and want to support development: (on itchi only)
 
-[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/yourusername)
-
-
-
-
-## ⚙️ How to Use
-1. Open project in STM32CubeIDE  
-2. Flash to Nucleo-STM32G071RB  
-3. Connect ILI9341 TFT SPI (240×320)  
-4. 5 pins for display and 4 for BTN in pullUP witchi GND
+[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://clainyofficial.itch.io/silksong-quizer)
