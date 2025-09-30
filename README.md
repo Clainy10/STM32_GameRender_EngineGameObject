@@ -1,30 +1,69 @@
-    //// Description////
-# STM32_GameRender_EngineGameObject
-This is workest Game Engine for my Nucleo-STM32G071RB witch 64MHZ and 36KB, for now you can try this engine in CubeIDE for your STM32 witch TFT SPI, this engine based on redering automatic the all object sorting on Z Layer, user need to create solid rectagle sprite for objects or Bitmap costum sprite witch function in "gameobject.h" like use UNITY, You can help me to inprove this engine to work, or inprove for your self.
+# 🎮 STM32 Game Render Engine (GameObject)
 
+This is a lightweight **Game Engine** for the **Nucleo-STM32G071RB** (64 MHz, 36 KB RAM).  
+It runs in **STM32CubeIDE** and supports **TFT SPI 240×320 displays** (ILI9341).  
 
-/////Info_needest_file////
-1)in this project for CubeIDE, all file is in Core/Src and Core/Inc, 
-and pin configuration for TFT SPI 240*320 pixels and control four buttons "BTN" in file .ioc.
-2) All "EngineRendering" file in Core/Src/EngineC and Core/Inc/EngineH.
-3) Game file in Core/Src/gameC and Core/Inc/gameH in this folders for 
-now you have mario.c game for Exaples.
-4) Library for TFT SPI 240*320 located in Core/Src and /Inc witch
-name fonts.h, ILI9341_STM32_Driver.h ILI9341_GFX.h and in Core/Src
-we have only ILI9341_STM32_Driver.c ILI9341_GFX.c for moment working
-witch DMA but not syncronyzed, i dont' know how to synkronyzed.
-5)Yes this is all file incluses in cubeIDE project.
+The engine automatically renders all objects with **Z-Layer sorting**.  
+You can create:
+- 🟦 Solid rectangle sprites  
+- 🖼️ Custom bitmap sprites (see `gameobject.h`)  
 
-//////Support and future inprovments///// very inportant/////
-1)For this moment i dont' have enouch Expirince to inprove trasffering DMA witch bloking date
-and buffering frame witch dirty rectagles 
-before representate on display(for remove blinking of object). (all this in driver of TFT SPI)
-2)Need to inprove and optimize Reder object algoritm
-for rendering only moved object or intersectional witch 2 
-object or more. (render.c and gameobject.c)
+Think of it as a **mini-Unity for STM32** 🚀  
 
+---
 
-///Help witch some Coffe////
-☕☕☕☕☕☕only on itchi game SilkQuizzer 
-itchi.io https://clainyofficial.itch.io/silksong-quizer
+## 📂 Project Structure
 
+1. **Main CubeIDE files**  
+   - Located in `Core/Src` and `Core/Inc`  
+   - TFT SPI pins & 4 button inputs configured in the `.ioc` file  
+
+2. **Engine files**  
+   - `Core/Src/EngineC`  
+   - `Core/Inc/EngineH`  
+
+3. **Game files (examples)**  
+   - `Core/Src/gameC`  
+   - `Core/Inc/gameH`  
+   - Includes `mario.c` as a demo game 🎮  
+
+4. **Display driver & fonts**  
+   - `fonts.h`  
+   - `ILI9341_STM32_Driver.h / .c`  
+   - `ILI9341_GFX.h / .c`  
+   - Currently works with **DMA** (not fully synchronized yet)  
+
+---
+
+## 🚧 Current Limitations / Future Improvements
+
+- ⚡ DMA transfer is blocking → need non-blocking + dirty rectangles  
+- 🖌️ Rendering algorithm could be optimized:  
+  - Only redraw moved objects  
+  - Handle object intersections more efficiently (`render.c`, `gameobject.c`)  
+
+Contributions are welcome! Pull requests & ideas appreciated 🙏  
+
+---
+
+## ☕ Support
+
+If you like this project and want to support development:  
+
+[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/yourusername)
+
+or check out my project on Itch.io:  
+👉 [SilkQuizzer Game on Itch.io](https://clainyofficial.itch.io/silksong-quizer)
+
+---
+
+## 📸 Screenshot / Demo
+*(add here if you have pictures or GIFs of the game running on your TFT)*
+
+---
+
+## ⚙️ How to Use
+1. Open project in STM32CubeIDE  
+2. Flash to Nucleo-STM32G071RB  
+3. Connect ILI9341 TFT SPI (240×320)  
+4. Play the demo game 🎮  
