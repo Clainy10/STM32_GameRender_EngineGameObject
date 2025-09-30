@@ -47,7 +47,7 @@ You can create:
 -  Rendering algorithm could be optimized:  
   - Only redraw moved objects  
   - Handle object intersections more efficiently (`render.c`, `gameobject.c`)  
-
+- Update API for users to make more easy to create a game
 Contributions are welcome! Pull requests & ideas appreciated  
 
 ---
