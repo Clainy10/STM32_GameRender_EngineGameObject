@@ -1,0 +1,8 @@
+../Core/Src/EngineC/render.c:24:6:Render_Init	8	static
+../Core/Src/EngineC/render.c:26:6:Render_SetBackgroundColor	16	static
+../Core/Src/EngineC/render.c:28:10:Render_GetBackgroundColor	8	static
+../Core/Src/EngineC/render.c:30:6:Render_ClearScreen	8	static
+../Core/Src/EngineC/render.c:33:5:Render_EnqueueFillRect	32	static
+../Core/Src/EngineC/render.c:50:5:Render_EnqueueBlitBitmap	32	static
+../Core/Src/EngineC/render.c:65:6:Render_Process	2472	static
+../Core/Src/EngineC/render.c:126:12:clip_rect_to_screen	48	static

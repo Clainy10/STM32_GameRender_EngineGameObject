@@ -1,0 +1,4 @@
+../Core/Src/EngineC/engine.c:12:6:Engine_SetLogicTick	2
+../Core/Src/EngineC/engine.c:13:6:Engine_SetRenderTick	2
+../Core/Src/EngineC/engine.c:15:6:Engine_Init	1
+../Core/Src/EngineC/engine.c:26:6:Engine_RunLoop	3

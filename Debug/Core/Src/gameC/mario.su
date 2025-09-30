@@ -1,0 +1,11 @@
+../Core/Src/gameC/mario.c:66:12:rects_overlap	24	static
+../Core/Src/gameC/mario.c:75:12:CreateSolid	24	static
+../Core/Src/gameC/mario.c:80:13:AddBlock	32	static
+../Core/Src/gameC/mario.c:92:13:SpawnGoomba	32	static
+../Core/Src/gameC/mario.c:111:13:GoombaLogic	80	static
+../Core/Src/gameC/mario.c:151:13:PlayerLogic	104	static
+../Core/Src/gameC/mario.c:267:13:CreateLevel_World1_1	32	static
+../Core/Src/gameC/mario.c:298:13:DrawHUD	48	static
+../Core/Src/gameC/mario.c:308:6:Start	24	static
+../Core/Src/gameC/mario.c:351:6:Update	8	static
+../Core/Src/gameC/mario.c:356:6:Render	8	static
